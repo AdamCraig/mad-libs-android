@@ -24,7 +24,8 @@ public class StoryViewActivity extends AppCompatActivity {
         String properNoun1 = intent.getStringExtra("properNoun1");
         String animal1 = intent.getStringExtra("animal1");
         String verb2 = intent.getStringExtra("verb2");
-        mStoryTextView.setText("A long, long time ago, in the Kingdom of " + noun1 + ", there lived a stupid giant. His only desire in the world was to " + verb1 + " as many people as possible. These people must be " + adjective1 + " or he would refuse to " + verb1 + " them. Suddenly, a magnificent hero named " + properNoun1 + " appeared! He was accompanied by his miniature " + animal1 + ", Bub. " + properNoun1 + " and Bub made sure that the stupid giant never " + verb1 + " or " + verb2 + " again.");
+        String story = "A long, long time ago, in the Kingdom of " + noun1 + ", there lived a stupid giant. His only desire in the world was to " + verb1 + " as many people as possible. These people must be " + adjective1 + " or he would refuse to " + verb1 + " them. Suddenly, a magnificent hero named " + properNoun1 + " appeared! He was accompanied by his miniature " + animal1 + ", Bub. " + properNoun1 + " and Bub made sure that the stupid giant never " + verb1 + " or " + verb2 + " again.";
+        mStoryTextView.setText(story);
 
         mPlayAgainButton = (Button) findViewById(R.id.playAgainButton);
             mPlayAgainButton.setOnClickListener(new View.OnClickListener() {
